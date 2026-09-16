@@ -1,5 +1,8 @@
 import "./App.css";
 import { useQuery, gql } from "@apollo/client";
+var require = createRequire(import.meta.url);
+var module = { exports: {} };
+
 const query = gql `
 query GetTodosWithUser {
   getTodos {
